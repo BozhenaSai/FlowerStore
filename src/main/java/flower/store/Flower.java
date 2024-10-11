@@ -23,24 +23,24 @@ public class Flower {
         this.price = price;
     }
 
-    public double setSepalLength(double sepalLength) {
-        return this.sepalLength = sepalLength;
+    public void setSepalLength(double newSepalLength) {
+        this.sepalLength = newSepalLength;
     }
     
     public double getSepalLength() {
         return sepalLength;
     }
 
-    public double setPrice(double price) {
-        return this.price = price;
+    public void setPrice(double newPrice) {
+        this.price = newPrice;
     }
 
     public double getPrice() {
         return price;
     }
 
-    public void setColor(FlowerColor color) {
-        this.color = color;
+    public void setColor(FlowerColor newColor) {
+        this.color = newColor;
     }
 
     public String getColor() {
