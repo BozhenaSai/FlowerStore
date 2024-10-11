@@ -17,30 +17,11 @@ public class Flower {
     private double price;
     private FlowerType flowerType;
 
-    public Flower(double sepalLength, FlowerColor color, double price) {
-        this.sepalLength = sepalLength;
-        this.color = color;
-        this.price = price;
-    }
-
-    public void setSepalLength(double sepalLength) {
-        this.sepalLength = sepalLength;
-    }
-    
-    public double getSepalLength() {
-        return sepalLength;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setColor(FlowerColor newColor) {
-        this.color = newColor;
+    public Flower(Flower flower) {
+        this.color = flower.color;
+        this.sepalLength = flower.sepalLength;
+        this.price = flower.price;
+        this.flowerType = flower.flowerType;
     }
 
     public String getColor() {
